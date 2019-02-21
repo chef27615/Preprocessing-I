@@ -67,41 +67,54 @@ html, body {
 	margin: 2rem auto;
 	line-height: 2;
 }
+.enterData(){
+	background: lightgrey;
+	text-align: center;
+	padding-top: 1rem;
+}
 
-@fontStack: 				arial, san-serif;
+
+@fontStack: 				Roboto, arial, san-serif;
 @heading-Font-Size: 		16rem;
 @heading-Font-size: 		10rem;
 @p-font-size: 				5rem;
+@font-color:				#080f19;
+@mobile: (max-width: 515rem);
 .body-container{
 	width:80%;
 	margin: 0 auto;
-	background: gray;
+	background: #b5bdc9;
 	display: flex;
 	flex-wrap: wrap;
-	
+	color:@font-color;
+	font-family: @fontStack;
+	@media @mobile{
+		width: 95%;
+		flex-direction: column;
+	}
 	header{
 		width: 100%;
 		height: 20rem;
-		background: dodgerblue;
+		background: #55637a;
 		display: flex;
 		flex-direction: column;
-		align-content: flex-end;
 		h1{
 			font-size: @heading-Font-Size;
-			padding-left: 96rem;
+			padding-left: 106rem;
 			padding-top: 10rem;
 		}
 
 		p{
-			font-size: @heading-Font-size;
-			padding-left: 101rem;
+			font-size: 8rem;
+			padding: 2rem 0 0 116rem;
 		}
 	}
 	
 	.side-bar{
 		width:20rem;
 		height:300rem;
-		background: orange;
+		background: #888e99;
+		padding-top: 40rem;
 
 		h2{
 			font-size: @heading-Font-size;
@@ -109,7 +122,7 @@ html, body {
 			padding-top: 20rem;
 		}
 		p{
-			font-size: p-font-size;
+			font-size: @p-font-size;
 			text-align: end;
 			padding: 2rem;
 			font-size: 5rem;
@@ -134,7 +147,7 @@ html, body {
 	.content{
 		width: 80%;
 		height: 300rem;
-		background: lightgreen;
+		background: #dee9fc;
 		display: flex;
 		flex-direction: column;
 		font-size: 8rem;
@@ -145,6 +158,11 @@ html, body {
 		}
 		p{
 			margin: 3rem;
+		}
+		img{
+			
+			height: 25rem;
+			padding: 2rem 2rem 0rem 75rem;
 		}
 		.my_way{
 			width: 80%;
@@ -160,12 +178,31 @@ html, body {
 			width: 60%;
 			.indent;
 		}
+		table{
+			width: 40rem;
+			margin: 0 auto;
+			height: 6rem;
+			tr{
+				height: 6rem;
+				
+				
+			}
+			td{
+				.enterData();
+			}
+		}
 	}
 
 	footer{
 		width: 100%;
-		height: 15rem;
-		background: hotpink;
+		height: 5rem;
+		background: #5637a;
+		
+		p{
+			padding-top: 1rem;
+			text-align: center;	
+			
+		}
 	}
 
 }
