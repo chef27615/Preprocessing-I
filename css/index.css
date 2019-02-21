@@ -132,7 +132,7 @@ table {
 }
 html,
 body {
-  max-height: 1170rem;
+  max-height: 500rem;
   height: 100%;
   font-size: 62.5%;
   max-width: 830rem;
@@ -165,7 +165,7 @@ body {
 }
 .body-container .side-bar {
   width: 20rem;
-  height: 800rem;
+  height: 300rem;
   background: orange;
 }
 .body-container .side-bar h2 {
@@ -194,7 +194,7 @@ body {
 }
 .body-container .content {
   width: 80%;
-  height: 800rem;
+  height: 300rem;
   background: lightgreen;
   display: flex;
   flex-direction: column;
@@ -207,6 +207,11 @@ body {
 }
 .body-container .content p {
   margin: 3rem;
+}
+.body-container .content .my_way {
+  width: 80%;
+  margin: 1rem auto;
+  line-height: 2;
 }
 .body-container .content .school {
   width: 60%;

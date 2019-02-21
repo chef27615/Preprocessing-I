@@ -54,13 +54,18 @@ table {
 }
 
 html, body {
-	max-height: 1170rem;
+	max-height: 500rem;
 	height: 100%;
 	font-size: 62.5%;
 	max-width:830rem;
 	width: 100%;
 	padding: 2rem;
 	
+}
+
+.indent(){
+	margin: 2rem auto;
+	line-height: 2;
 }
 
 @fontStack: 				arial, san-serif;
@@ -95,7 +100,7 @@ html, body {
 	
 	.side-bar{
 		width:20rem;
-		height:800rem;
+		height:300rem;
 		background: orange;
 
 		h2{
@@ -128,7 +133,7 @@ html, body {
 
 	.content{
 		width: 80%;
-		height: 800rem;
+		height: 300rem;
 		background: lightgreen;
 		display: flex;
 		flex-direction: column;
@@ -141,17 +146,19 @@ html, body {
 		p{
 			margin: 3rem;
 		}
-
+		.my_way{
+			width: 80%;
+			margin: 1rem auto;
+			line-height: 2;
+		}
 		.school{
 			width: 60%;
-			margin: 2rem auto;
-			line-height: 2;
+			.indent;
 
 		}
 		.jobs{
 			width: 60%;
-			margin: 2rem auto;
-			line-height: 2;
+			.indent;
 		}
 	}
 
