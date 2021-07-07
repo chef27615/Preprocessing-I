@@ -54,6 +54,214 @@ table {
 }
 
 html, body {
-    height: 100%;
+	//max-height: 500rem;
+	//height: 100%;
+	font-size: 62.5%;
+	//max-width:830rem;
+	//width: 100%;
+	padding: 2rem;
+	
 }
 
+.indent(){
+	margin: 2rem auto;
+	line-height: 1.25;
+}
+.enterData(){
+	background: lightgrey;
+	text-align: center;
+	padding-top: 1rem;
+}
+.mobile-indent(){
+	width:100%;
+	margin: 1rem;
+}
+@mobile: 					( max-width: 515px );
+@fontStack: 				Roboto, arial, san-serif;
+@heading-Font-Size: 		4rem;
+
+@p-font-size: 				5rem;
+@font-color:				#080f19;
+
+.body-container{
+	width:80%;
+	margin: 0 auto;
+	background: #b5bdc9;
+	display: flex;
+	
+	flex-wrap: wrap;
+	color:@font-color;
+	font-family: @fontStack;
+	@media @mobile{
+		width: 100%;
+		flex-direction: column;
+	}
+	header{
+		width: 100%;
+		height: 40rem;
+		background: #55637a;
+		display: flex;
+		flex-direction: column;
+		@media @mobile {
+			width: 100%;
+			height: 20rem;
+			flex-direction: column;
+			justify-content: flex-start;
+		}
+		h1{
+			font-size: @heading-Font-Size;
+			padding-left: 109rem;
+			padding-top: 28rem;
+			color:lightgray;
+			@media @mobile{
+				color: black;
+				align-content: flex-start;
+				padding: 1rem ;
+				margin-top: 10rem;
+			}
+		}
+
+		p{
+			font-size: 2rem;
+			padding-left: 118rem;
+			color: lightgray;
+			@media @mobile{
+				padding: 1rem;
+			}
+		}
+		
+		
+	}
+	
+	.side-bar{
+		width:20%;
+		background: #888e99;
+		padding-top: 19rem;
+		border-right: 3px solid white;
+		@media @mobile{
+			width: 100%;
+			padding-top: 2rem;
+		}
+		h2{
+			font-size: 4rem;
+			padding-left: 7rem;
+			padding-top: 20rem;
+
+			@media @mobile{
+				padding: 1rem;
+				font-size: 3rem;
+
+			}	
+		}
+		p{
+			font-size: @p-font-size;
+			text-align: end;
+			padding: 1rem;
+			font-size: 2rem;
+			margin: 1rem 0;
+			line-height: 6rem;
+
+			@media @mobile{
+				line-height: 1.25;
+				text-align: center;
+			}
+		}
+		nav{
+			display:flex;
+			flex-wrap: wrap;
+			justify-content: flex-end;
+			font-size: 3rem;
+			@media @mobile{
+				flex-direction: column;
+				align-content: center;
+				font-size: 2rem;
+			}
+			
+			a{
+				text-align: end;
+				padding: 2rem;
+				text-decoration: none;
+				color: #dee1e5;
+			@media @mobile{
+				padding:1rem;
+				text-align: center;
+			}	
+			}
+		}
+	}
+
+	.content{
+		width: 75%;
+		background: #dee9fc;
+		display: flex;
+		flex-direction: column;
+		font-size: 8rem;
+		@media @mobile{
+			width: 100%;
+			padding: 1rem;
+		}
+		h3{
+			text-decoration: underline;
+			font-size: 3rem;
+			font-weight: bold;
+		@media @mobile{
+			font-size: 2rem;
+			text-decoration: none;
+		}	
+		}
+		p{
+			margin: 3rem;
+			font-size: 2rem;
+		@media @mobile{
+			margin: 1rem;
+			
+		}	
+		}
+		img{
+			
+			height: 25rem;
+			padding: 2rem 2rem 0rem 75rem;
+		@media @mobile{
+			display: none;
+		}	
+		}
+		.my_way{
+			width: 80%;
+			margin: 1rem auto;
+			line-height: 1.25;
+		@media @mobile{
+			.mobile-indent();
+		}	
+		}
+		.school{
+			width: 60%;
+			.indent;
+		@media @mobile{
+			.mobile-indent();	
+		}
+		}
+		.jobs{
+			width: 60%;
+			.indent;
+		@media @mobile{
+			.mobile-indent();
+		}
+		}
+		
+		
+	}
+
+	footer{
+		width: 100%;
+		height: 5rem;
+		font-size: 1rem;
+		background: #30343a;
+		
+		p{
+			padding-top: 1rem;
+			text-align: center;	
+			
+		}
+	}
+
+}
